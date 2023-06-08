@@ -10,6 +10,12 @@ body{
     background: linear-gradient(270deg, #0F77FF, #EDEDED)
 }
 
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
 .block{
     color: #ffffff;
     position: relative;
