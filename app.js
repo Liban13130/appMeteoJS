@@ -33,13 +33,13 @@ async function getData(){
 
     if(sortedData.pollution > 0 && sortedData.pollution < 50){
         pollution.textContent = `Le niveau de pollution est de : ${sortedData.pollution} (Bien)`
-    }else if(sortedData.pollution > 50 && sortedData.pollution > 100){
+    }else if(sortedData.pollution >= 50 && sortedData.pollution < 100){
         pollution.textContent = `Le niveau de pollution est de : ${sortedData.pollution} (Modéré)`
     }
-    else if(sortedData.pollution > 100 && sortedData.pollution > 150){
+    else if(sortedData.pollution >= 100 && sortedData.pollution < 150){
         pollution.textContent = `Le niveau de pollution est de : ${sortedData.pollution} (Malsain pour les personnes sensibles)`
     }
-    else if(sortedData.pollution > 150 && sortedData.pollution > 200){
+    else if(sortedData.pollution >= 150 && sortedData.pollution < 200){
         pollution.textContent = `Le niveau de pollution est de : ${sortedData.pollution} (Mauvais pour la santé)`
     }
 
